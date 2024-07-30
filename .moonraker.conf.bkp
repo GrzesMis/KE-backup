@@ -14,6 +14,14 @@ enable_object_processing = True
 temperature_store_size = 600
 gcode_store_size = 1000
 
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
 [machine]
 provider = supervisord_cli
 validate_service = False
